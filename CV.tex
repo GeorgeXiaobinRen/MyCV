@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{pifont}
+
+% Disable hyphenation
+\usepackage{hyphenat}
+% Page layout
+\geometry{margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% Color scheme
+\definecolor{text}{RGB}{50, 50, 50}
+
+% Section formatting
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+% Hyperlink settings
+\hypersetup{
+    hidelinks                   % 隐藏所有链接边框和背景色
+}
+
+% Custom commands
+\newcommand{\cvitem}[2]{\textbf{#1} \hfill \textit{#2}}
+\newcommand{\skillitem}[2]{\textbf{#1:} #2}
+\newcommand{\contact}[2]{\faIcon{#1} \hspace{0.5em} #2}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries Xiaobin Ren}\\[4pt]
+    % Contact information
+    \contact{envelope}{\href{mailto:1155239443@link.cuhk.edu.hk}{\texttt{1155239443@link.cuhk.edu.hk}}} \quad
+    \contact{phone}{+852 92870301} \quad
+    \contact{map-marker-alt}{Hong Kong, China} \\
+    \contact{globe}{{\href{https://georgexiaobinren.github.io/}{\texttt{georgexiaobinren.github.io}}}} \quad
+    \contact{github}{\href{https://github.com/GeorgeXiaobinRen}{\texttt{github.com/GeorgeXiaobinRen}}}
+\end{center}
+
+% Education
+\section{Education}
+\cvitem{M.S. in Mathematics}{Aug. 2025 - Jun. 2026(expected)}\\
+\ding{226} \textbf{Chinese University of Hong Kong}\\
+Relevant Courses: Stochastic Analysis, Mathematical Image Processing, Machine Learning, Artificial Intelligence\\
+
+\cvitem{B.S. in Mathematics}{Sep. 2021 - Jun. 2025}\\
+\ding{226} \textbf{Hunan University} (Project 985)\\
+GPA of compulsory courses: 3.46/4.0 (85.44/100)\\
+Relevant Courses: Numerical Solution of Differential Equations, Optimization Theory, Numerical Analysis
+
+% Technical Skills
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*,nosep]
+    \item \skillitem{Programming Languages}{Python, MATLAB, R, C++, MySQL}
+    \item \skillitem{Typesetting Tools}{\LaTeX, Markdown, Typst, Word}
+    \item \skillitem{Mathematical Software}{Mathematica, Maple}
+    \item \skillitem{Data Analysis}{NumPy, Pandas, SciPy}
+    \item \skillitem{Machine Learning}{PyTorch, Scikit-learn}
+    \item \skillitem{Tools}{Git, Jupyter Notebook, Linux, Docker}
+\end{itemize}
+
+% Projects
+\section{Research Projects}
+\cvitem{Application of Deep Learning Method in Numerical Computation}{\textit{2023 - 2025}}
+\begin{itemize}[leftmargin=*,nosep]
+    \item China University Student Innovation Training Program (SIT) (National-level)
+    \item Position: Team member
+    \item Instituter: Prof. Wenfan Yi
+    \item Responsibilities:
+    \begin{itemize}[leftmargin=*,nosep]
+        \item Learned deep learning methods including ResNet, PINNs, SINDy, etc.
+        \item Conducted in-depth research on the theoretical foundations of the KAN network and analyzed its potential advantages.
+        \item Designed the architecture and configure parameters, and performed comparative experiments to evaluate the performance of KAN with other networks on
+different problems.
+        \item Participated in completing academic paper
+    \end{itemize}
+\end{itemize}
+\vspace{0.5cm}
+\cvitem{Meshless Computational Methods for Financial Derivatives Problems}{\textit{2025 - 2026}}
+\begin{itemize}[leftmargin=*,nosep]
+    \item Independent study project
+    \item Position: Team member
+    \item Instituter: Prof. Benny Y. C. Hon
+    \item Responsibilities:
+    \begin{itemize}[leftmargin=*,nosep]
+        \item Studied classical numerical methods for fractional differential equations (FPDEs) and Volterra integral equations
+        \item Converted fractional differential operators and integrals into approximate formats that can be handled by automatic differentiation
+        \item Considered applying Monte Carlo sampling to different problems (especially the high-dimensional problems)
+    \end{itemize}
+\end{itemize}
+
+% Research Experience
+%\section{Research Experience}
+%\cvitem{}
+%\textit{September 2023 - Present}
+%\begin{itemize}[leftmargin=*,nosep]
+%    \item Assisted professor in computational mathematics research projects
+%    \item Developed algorithms for numerical linear algebra applications
+%    \item Conducted literature reviews and contributed to research papers
+%\end{itemize}
+
+% Work Experience
+\section{Work Experience}
+\cvitem{Data Analysis Intern}{Jul. 2023 - Aug. 2023}
+\begin{itemize}[leftmargin=*,nosep]
+    \item Tianjin Xinghu Technology Development Co., LTD
+    \item Responsibilities:
+    \begin{itemize}[leftmargin=*,nosep]
+        \item Extracted relevant data from various sources, including company databases, online surveys, and market research, and conducted forecasts on key metrics such as trends in product price changes.
+        \item Utilized tools like Excel and Python to analyze collected data, identify trends and patterns, and generate analytical reports to support decision-making.
+    \end{itemize}
+\end{itemize}
+
+% Awards \& Honors
+\section{Awards \& Honors}
+\begin{itemize}[leftmargin=*,nosep]
+    \item Second-Class Scholarship in the 2021-2022 Academic Year (University-Level), 2022
+    \item Third Prize in the China Undergraduate Mathematical Contest in Modeling (Provincial-Level), 2023
+
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=*,nosep]
+    \item English (Fluent, IELTS 7.0, CET6 580)
+    \item Mandarin (Native)
+    \item Dialects: Cantonese(a little), Wu dialect(Native)
+\end{itemize}
+
+% References
+%\section{Publications}
+%\begin{itemize}[leftmargin=*,nosep]
+%    \item Author, X., \textbf{Xiaobin Ren}, et al. ``Title of Paper.'' \textit{Journal Name}, Year.
+%    \item \textbf{Xiaobin Ren}, Co-author, Y. ``Another Paper Title.'' \textit{Conference Proceedings}, Year.
+%\end{itemize}
+
+
+\end{document}
