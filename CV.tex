@@ -11,9 +11,10 @@
 % Disable hyphenation
 \usepackage{hyphenat}
 % Page layout
-\geometry{margin=1in}
+\geometry{margin=0.625in}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{2pt}
+\pagestyle{empty}
 
 % Color scheme
 \definecolor{text}{RGB}{50, 50, 50}
@@ -24,6 +25,7 @@
 {}
 {0em}
 {}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{4pt}
 
 % Hyperlink settings
 \hypersetup{
@@ -41,11 +43,11 @@
 \begin{center}
     {\Huge\bfseries Xiaobin Ren}\\[4pt]
     % Contact information
-    \contact{envelope}{\href{mailto:1155239443@link.cuhk.edu.hk}{\texttt{1155239443@link.cuhk.edu.hk}}} \quad
-    \contact{phone}{+852 92870301} \quad
-    \contact{map-marker-alt}{Hong Kong, China} \\
+    \contact{map-marker-alt}{Hong Kong, China} \quad
+    \contact{phone}{+852 92870301/+86 18012352209} \\
     \contact{globe}{{\href{https://georgexiaobinren.github.io/}{\texttt{georgexiaobinren.github.io}}}} \quad
-    \contact{github}{\href{https://github.com/GeorgeXiaobinRen}{\texttt{github.com/GeorgeXiaobinRen}}}
+    \contact{github}{\href{https://github.com/GeorgeXiaobinRen}{\texttt{github.com/GeorgeXiaobinRen}}} \\
+    \contact{envelope}{\href{mailto:1155239443@link.cuhk.edu.hk}{\texttt{1155239443@link.cuhk.edu.hk}}}
 \end{center}
 
 % Education
@@ -64,10 +66,10 @@ Relevant Courses: Numerical Solution of Differential Equations, Optimization The
 \begin{itemize}[leftmargin=*,nosep]
     \item \skillitem{Programming Languages}{Python, MATLAB, R, C++, MySQL}
     \item \skillitem{Typesetting Tools}{\LaTeX, Markdown, Typst, Word}
-    \item \skillitem{Mathematical Software}{Mathematica, Maple}
+%    \item \skillitem{Mathematical Software}{Mathematica, Maple}
     \item \skillitem{Data Analysis}{NumPy, Pandas, SciPy}
     \item \skillitem{Machine Learning}{PyTorch, Scikit-learn}
-    \item \skillitem{Tools}{Git, Jupyter Notebook, Linux, Docker}
+    \item \skillitem{Tools}{Git, Jupyter Notebook, Docker} % Linux,
 \end{itemize}
 
 % Publications
@@ -92,7 +94,8 @@ Relevant Courses: Numerical Solution of Differential Equations, Optimization The
         \item Conducted research reviews and contributed to research papers
     \end{itemize}
 \end{itemize}
-\vspace{0.5cm}
+
+\vspace{0.5cm} % Removed manual vertical space to maintain consistency
 \cvitem{Meshless Computational Methods for Financial Derivatives Problems}{\textit{2025 - 2026}}
 \begin{itemize}[leftmargin=*,nosep]
     \item Independent study project
@@ -118,17 +121,17 @@ Relevant Courses: Numerical Solution of Differential Equations, Optimization The
 %\end{itemize}
 
 % Work Experience
-\section{Work Experience}
-\cvitem{Data Analysis Intern}{Jul. 2023 - Aug. 2023}
-\begin{itemize}[leftmargin=*,nosep]
-    \item Tianjin Xinghu Technology Development Co., LTD
-    \item Responsibilities:
-    \begin{itemize}[leftmargin=*,nosep]
-        \item Extracted relevant data from various sources
-        \item Conducted forecasts on key metrics
-        \item Utilized tools like Excel and Python to analyze collected data and generate reports
-    \end{itemize}
-\end{itemize}
+%\section{Work Experience}
+%\cvitem{Data Analysis Intern}{Jul. 2023 - Aug. 2023}
+%\begin{itemize}[leftmargin=*,nosep]
+%    \item Tianjin Xinghu Technology Development Co., LTD
+%    \item Responsibilities:
+%    \begin{itemize}[leftmargin=*,nosep]
+%        \item Extracted relevant data from various sources
+%        \item Conducted forecasts on key metrics
+%        \item Utilized tools like Excel and Python to analyze collected data and generate reports
+%    \end{itemize}
+%\end{itemize}
 
 % Awards \& Honors
 \section{Awards \& Honors}
